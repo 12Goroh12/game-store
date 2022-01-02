@@ -6,7 +6,7 @@ const GAMES = [
 	{
 		image: '/game-covers/forza_5.jpeg',
 		title: 'Forza Horizon 5',
-		genres: ['Гонки', 'Симулятор', 'Открытый мир'],
+		genres: ['Race', 'Simulator', 'Open world'],
 		price: 43,
 		video: 'https://www.youtube.com/embed/FYH9n37B7Yw',
 		id: 1,
@@ -15,7 +15,7 @@ const GAMES = [
 	{
 		image: '/game-covers/battlefield_2042.jpg',
 		title: 'Battlefield 2042',
-		genres: ['Экшен', 'Шутер', 'Война'],
+		genres: ['Action', 'Shooter', 'War'],
 		video: 'https://www.youtube.com/embed/ASzOzrB-a9E',
 		price: 33,
 		id: 2,
@@ -24,7 +24,7 @@ const GAMES = [
 	{
 		image: '/game-covers/life_is_strange_true_colors.jpeg',
 		title: 'Life is Strange True Colors',
-		genres: ['Глубокий сюжет', 'Протагонистка'],
+		genres: ['Deep plot', 'Protagonist'],
 		video: 'https://www.youtube.com/embed/b6CkzwVAr0M',
 		price: 21,
 		id: 3,
@@ -33,7 +33,7 @@ const GAMES = [
 	{
 		image: '/game-covers/gta_v.jpeg',
 		title: 'Grand Theft Auto V',
-		genres: ['Открытый мир', 'Экшен'],
+		genres: ['Open world', 'Action'],
 		video: 'https://www.youtube.com/embed/QkkoHAzjnUs',
 		price: 89,
 		id: 4,
@@ -43,7 +43,7 @@ const GAMES = [
 		image: '/game-covers/rainbow_siege.jpeg',
 		title: 'Tom Clancy\'s Rainbow Six® Siege',
 		video: 'https://www.youtube.com/embed/6wlvYh0h63k',
-		genres: ['Тактика', 'Шутер'],
+		genres: ['Тактика', 'Shooter'],
 		price: 92,
 		id: 5,
 		description: 'Tom Clancy\'s Rainbow Six Осада – это продолжение нашумевшего шутера от первого лица, разработанного студией Ubisoft Montreal.'
@@ -51,7 +51,7 @@ const GAMES = [
 	{
 		image: '/game-covers/assassins_creed_valhalla.png',
 		title: 'Assassin’s Creed Valhalla',
-		genres: ['Паркур', 'РПГ', 'Открытый мир'],
+		genres: ['Паркур', 'RPG', 'Open world'],
 		video: 'https://www.youtube.com/embed/ssrNcwxALS4',
 		price: 63,
 		id: 6,
@@ -60,7 +60,7 @@ const GAMES = [
 	{
 		image: '/game-covers/spiderman.jpeg',
 		title: 'Spider-man',
-		genres: ['Паркур', 'Открытый мир'],
+		genres: ['Паркур', 'Open world'],
 		video: 'https://www.youtube.com/watch?v=zvSATuZXl2c',
 		price: 93,
 		id: 7,
@@ -69,7 +69,7 @@ const GAMES = [
 	{
 		image: '/game-covers/last.jpg',
 		title: 'Last of Us',
-		genres: ['Экшен', 'Открытый мир'],
+		genres: ['Action', 'Open world'],
 		video: 'https://www.youtube.com/watch?v=eBJTYa-Z7FU',
 		price: 70,
 		id: 8,
@@ -78,7 +78,7 @@ const GAMES = [
 	{
 		image: '/game-covers/fifa22.jpg',
 		title: 'FIFA 2022',
-		genres: ['Спорт'],
+		genres: ['Sport', 'Simulator'],
 		video: 'https://www.youtube.com/watch?v=SYsi5QuOJNE',
 		price: 100,
 		id: 9,
@@ -89,7 +89,7 @@ const GAMES = [
 const HomePage = () => {
 	return (
 		<div className='home-page'>
-			{GAMES.map(game => <GameItem key={game.id} {...game} />)}
+			{GAMES.map(game => <GameItem key={game.id} game={game} />)}
 		</div>
 	)
 }

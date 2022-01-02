@@ -1,0 +1,27 @@
+.btn {
+	border-radius: 7px;
+	color: white;
+	border: none;
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.25s ease-in-out;
+}
+.btn:hover {
+	background-color: rgb(80, 82, 84);
+}
+.btn:active {
+	background-color: rgb(85, 88, 237);
+}
+.btn-secondary {
+	background-color: rgb(80, 82, 84);
+}
+.btn-primary {
+	background-color: rgb(85, 88, 237);
+}
+.btn-small {
+	font-size: 14px;
+}
+.btn-medium {
+	font-size: 18px;
+}

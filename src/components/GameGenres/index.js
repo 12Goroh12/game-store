@@ -1,0 +1,1 @@
+export { GameGenres } from './GameGenres'

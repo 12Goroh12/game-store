@@ -1,0 +1,1 @@
+export { GameBuy } from './GameBuy'
