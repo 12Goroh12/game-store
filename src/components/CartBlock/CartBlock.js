@@ -3,19 +3,19 @@ import { CartMenu } from '../CartMenu'
 import { useSelector } from 'react-redux'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { calcTotalPrice } from '../Header/utils'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './CartBlock.css'
 
 const CartBlock = () => {
 	const [isCartMenuVisible, setIsCartMenuVisible] = useState(false)
 	const items = useSelector((state) => state.cart.itemsInCart)
 	const totalPrice = calcTotalPrice(items)
-	const history = useHistory()
+	const navigate = useNavigate()
 
 	const handleClick = useCallback(() => {
 		setIsCartMenuVisible(false)
-		history.push('/order')
-	}, [history])
+		navigate('/order')
+	}, [navigate])
 
 	return (
 		<div className='cart-block'>
