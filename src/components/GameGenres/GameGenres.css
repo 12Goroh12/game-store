@@ -6,3 +6,6 @@
 	padding: 2px 5px;
 	margin-right: 7px;
 }
+.game-genre:not(:last-child) {
+	margin-right: 7px;
+}

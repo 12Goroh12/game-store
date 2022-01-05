@@ -43,7 +43,7 @@ const GAMES = [
 		image: '/game-covers/rainbow_siege.jpeg',
 		title: 'Tom Clancy\'s Rainbow Six® Siege',
 		video: 'https://www.youtube.com/embed/6wlvYh0h63k',
-		genres: ['Тактика', 'Shooter'],
+		genres: ['Tactics', 'Shooter'],
 		price: 92,
 		id: 5,
 		description: 'Tom Clancy\'s Rainbow Six Осада – это продолжение нашумевшего шутера от первого лица, разработанного студией Ubisoft Montreal.'
@@ -51,7 +51,7 @@ const GAMES = [
 	{
 		image: '/game-covers/assassins_creed_valhalla.png',
 		title: 'Assassin’s Creed Valhalla',
-		genres: ['Паркур', 'RPG', 'Open world'],
+		genres: ['Parkour', 'RPG', 'Open world'],
 		video: 'https://www.youtube.com/embed/ssrNcwxALS4',
 		price: 63,
 		id: 6,
@@ -60,8 +60,8 @@ const GAMES = [
 	{
 		image: '/game-covers/spiderman.jpeg',
 		title: 'Spider-man',
-		genres: ['Паркур', 'Open world'],
-		video: 'https://www.youtube.com/watch?v=zvSATuZXl2c',
+		genres: ['Parkour', 'Open world'],
+		video: 'https://www.youtube.com/embed/zvSATuZXl2c',
 		price: 93,
 		id: 7,
 		description: 'Spider-Man — это action-adventure от третьего лица с открытым миром, события которого разворачиваются в Нью-Йорке. Игрокам предстоит использовать умения Человека-паука, такие как полёты на паутине и прилипание к стенам. В игре также есть нововведения, которые ещё не появлялись за все игры о Человеке-пауке.'
@@ -70,7 +70,7 @@ const GAMES = [
 		image: '/game-covers/last.jpg',
 		title: 'Last of Us',
 		genres: ['Action', 'Open world'],
-		video: 'https://www.youtube.com/watch?v=eBJTYa-Z7FU',
+		video: 'https://www.youtube.com/embed/eBJTYa-Z7FU',
 		price: 70,
 		id: 8,
 		description: 'The Last of Us - приключенческий экшен, рассказывающий историю Джоэла и Элли, стремящихся выжить в разрушенном, пораженном страшной эпидемией мире. Паре героев предстоит пересечь разрушенные США, чтобы добраться до безопасной зоны и спасти свои жизни.'
@@ -79,7 +79,7 @@ const GAMES = [
 		image: '/game-covers/fifa22.jpg',
 		title: 'FIFA 2022',
 		genres: ['Sport', 'Simulator'],
-		video: 'https://www.youtube.com/watch?v=SYsi5QuOJNE',
+		video: 'https://www.youtube.com/embed/SYsi5QuOJNE',
 		price: 100,
 		id: 9,
 		description: 'FIFA 22 — 29-ая по счёту компьютерная игра из серии FIFA в жанре футбольного симулятора, разработанная компаниями EA Vancouver под издательством Electronic Arts. На ПК, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S и Nintendo Switch игра уже вышла в октябре 2021 года.'
@@ -89,7 +89,7 @@ const GAMES = [
 const HomePage = () => {
 	return (
 		<div className='home-page'>
-			{GAMES.map(game => <GameItem key={game.id} game={game} />)}
+			{GAMES.map(game => <GameItem key={game.id} game={game} />).reverse()}
 		</div>
 	)
 }
