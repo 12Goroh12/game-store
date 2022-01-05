@@ -1,0 +1,19 @@
+.cart-item {
+	display: flex;
+	width: 100%;
+	padding: 10px 0;
+	justify-content: space-between;
+	align-items: center;
+}
+.cart-item__price {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.cart-item__remove {
+	cursor: pointer;
+}
+.cart-item__remove:hover {
+	color: red;
+}
